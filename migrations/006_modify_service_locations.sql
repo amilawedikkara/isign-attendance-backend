@@ -1,0 +1,5 @@
+ALTER TABLE service_locations
+ADD COLUMN IF NOT EXISTS mobile_1 VARCHAR(10)[];
+
+ALTER TABLE service_locations
+ADD COLUMN IF NOT EXISTS mobile_2 VARCHAR(10)[];

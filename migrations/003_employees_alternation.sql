@@ -1,0 +1,6 @@
+ALTER TABLE employees
+ADD COLUMN secret_code_enabled BOOLEAN DEFAULT TRUE,
+ADD COLUMN face_enrolled BOOLEAN DEFAULT FALSE,
+ADD COLUMN biometric_status VARCHAR(20) DEFAULT 'PENDING'
+CHECK (biometric_status IN ('PENDING', 'ENROLLED', 'FAILED')),
+ADD COLUMN verification_required BOOLEAN DEFAULT TRUE;

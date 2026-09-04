@@ -1,0 +1,13 @@
+node_modules
+dist
+.env
+
+uploads/
+enrolled_faces/
+redoc-static.html
+coverage/
+
+# Local API test/response artifacts
+/login.json
+/mobtest*.json
+/server-*.json
